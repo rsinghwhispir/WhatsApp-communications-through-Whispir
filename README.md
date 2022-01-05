@@ -25,17 +25,29 @@ After the WhatsApp template is approved, then the Customer can create the templa
 The WhatsApp template can be created by using /templates endpoint with POST method.
 More details with sample request/response sample payload can be found below:
 
-Create new template by using /templates endpoint with POST
+Create new template by using **/templates** endpoint with POST
+
 **Sample request**
 
-
+```
 POST http://whatsapp.[region].whispir.com/templates
-
 Headers: 
 Content-Type: application/json
 Authorisation: Bearer
-Payload
+```
+**Request Payload Syntax**
 
+```
+{
+  "name": "[Name of the WhatsApp template]",
+  "whatsappId": "[WhatsApp generated token]:igniteagain]",
+  "content": "[WhatsApp message body]", 
+  "description": "[Template description]",
+  "parameter": "{\"parameter_count\":0,\"parameter_data\":[]}"
+}
+```
+**Sample Request payload**
+```
 {
   "name": "igniteagain",
   "whatsappId": "5d63f94c_f696_bcbb_9da6_d6853d575f90:igniteagain",
@@ -43,12 +55,12 @@ Payload
   "description": "This is a test template",
   "parameter": "{\"parameter_count\":0,\"parameter_data\":[]}"
 }
-** required fields: "name", "whatsappId","content"
-** "name": must be low case, number and underscore
-** "name": maximum 30 characters
+```
+* **required fields**: "name", "whatsappId","content"
+* **"name"**: must be low case, number and underscore, maximum 30 characters
 
-**Sample response**
-
+**Sample Response**
+```
 {
     "id": "17",
     "name": "igniteagain",
@@ -62,4 +74,25 @@ Payload
     "created": "2020-07-20T05:31:29.537Z",
     "modified": "2020-07-20T05:31:29.537Z"
 }
+```
+## Creating approved WhatsApp templates in Whispir Web portal
+The Supplier provides a web portal to create WhatsApp approved templates that can be used for sending WhatsApp messages.
+
+**The steps for Adding an Approved WhatsApp template in the Platform’s web portal is listed below:**
+
+1.Add a new Approved WhatsApp template name and language and click Continue.
+
+![image](https://user-images.githubusercontent.com/96904835/148198977-d4d2a142-5782-42b4-bc18-64e1c35ff07f.png)
+
+2.Add the approved message content and any media type selected and click on Save to create the template in the Platform.
+
+![image](https://user-images.githubusercontent.com/96904835/148198533-b12b037b-580c-43f2-be00-41d1ae8468e7.png)
+
+* Whispir supports messaging to WhatsApp through Whispir platform REST APIs and Web portal.
+* Whispir supports both rich content and multimedia (i.e. Image, Video, document and location) messaging through WhatsApp.
+
+
+
+
+
 
