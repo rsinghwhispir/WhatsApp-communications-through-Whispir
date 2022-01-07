@@ -91,8 +91,121 @@ The Supplier provides a web portal to create WhatsApp approved templates that ca
 * Whispir supports messaging to WhatsApp through Whispir platform REST APIs and Web portal.
 * Whispir supports both rich content and multimedia (i.e. Image, Video, document and location) messaging through WhatsApp.
 
+Whispir Messaging API and platform hide the complexity of hosting and scaling WhatsApp software so that the customer can focus on elevating customer experiences.
+Please note that WhatsApp restricts any marketing messages through its channel and does not approve any templates that contain any marketing content. Notwithstanding the above, the Customer can still send a WhatsApp message targeting marketing keeping their WhatsApp message content as non-marketing and putting the marketing content in the Supplier’s microsite link that is sent as part of WhatsApp message.
+
+## Sending WhatsApp message using the Platform’s web portal
+ 
+The below screenshot shows how the Customer can use an existing WhatsApp approved template to send a WhatsApp message from the Platform. The Platform provides many native/system variables that can be used to be included in the WhatsApp message to personalise the message.
+
+![image](https://user-images.githubusercontent.com/96904835/148511905-b8ed8634-24ab-4e36-be13-edd4bcb0b29b.png)
+
+## Sending WhatsApp messages using Supplier’s REST APIs
+
+Whispir platform’s REST APIs supports sending WhatsApp messages using a WhatsApp approved template both in real-time and in bulk.
+More details on how to send WhatsApp messages using Whispir platform APIs can be found below:
+https://developers.whispir.com/docs/whatsapp-messages
+
+Sample WhatsApp message below triggered from Whispir’s platform:
+![image](https://user-images.githubusercontent.com/96904835/148512071-ac2fad31-ac44-464d-a720-878ddd91be76.png)
 
 
+# WhatsApp Business Policy
 
+The below sections on the Business policy of WhatsApp Business Solution (WhatsApp Business API).
 
+## Opt-in
+In order to initiate a WhatsApp message to a person, you must first receive opt-in permission confirming that they wish to receive future messages from you on WhatsApp. 
+The opt-in must
+
+(a) clearly state that the person is opting in to receive messages from you over WhatsApp and 
+
+(b) clearly state your business’ name.
+
+You are solely responsible for determining the method of opt-in, that you have obtained opt-in in a manner that complies with laws applicable to your communications, and that you have otherwise provided notices and obtained permissions that are required under applicable law.
+
+## Acceptable Message Types
+
+* You may only initiate chats using an approved Message Template (as defined in our documentation), subject to applicable pricing. Any Message Template must comply with our terms and these policies, and only be used for its designated purpose. We have the right to review, approve and reject any Message Template at any time.
+* If a person initiates a chat with you, you may continue that conversation via WhatsApp for up to 24 hours after the last message sent to you by that person without charge ("24-hour Window"). Outside of the 24-hour Window, you may only send messages via approved Message Templates, for which we will charge the applicable rate.
+* You may use automation when responding during the 24-hour Window, but must also have available prompt, clear, and direct escalation paths to human agents. These escalation paths include:
+   * In Chat Human Agent transfer
+   * Phone number
+   * Email
+   * Web support (on the business website)
+   * In-store visits (ex: visit retail store, bank branch)
+   * Support form
+
+## Opt-In Best Practices
+
+Driving high quality conversations between people and businesses is a top priority. People can block or report businesses and our systems will rate limit businesses if the business' quality is low for a sustained period of time. We may also reactively evaluate a business' opt-in flows, including review of user feedback, to flag policy violations and develop additional types of enforcement over time.
+
+Best practices to create a high-quality opt-in experience:
+
+* Users should expect the messages they receive. You can set this expectation by:
+    * Obtaining an opt-in that encompasses the different categories of messages that you will send (ex: order updates, relevant offers, product recommendations, etc.)
+    * Obtaining separate opt-in by specific message category
+
+This mitigates the risk that users will block your business because they receive unsolicited messages.
+
+* Provide clear instructions for how people can opt out of receiving specific categories of messages, and honor these requests.
+* Ensure your opt-in and opt-out flows are clear and intuitive for users.
+* Clearly communicate the value of receiving this information on WhatsApp.
+
+## Quality Rating
+
+Your quality rating is based on how messages have been received by recipients over the past seven days and is weighted by recency. It is determined by a combination of quality signals from conversations between businesses and users. Examples include user feedback signals like blocks, reports and the reasons users provide when they block a business.
+
+The phone number status, quality rating, and messaging limits for your WhatsApp business account are listed in the Phone Numbers tab in WhatsApp Manager.
+
+![image](https://user-images.githubusercontent.com/96904835/148517205-0d2c147f-7494-4ec2-9ba1-47f7355448b6.png)
+
+  ## Messaging Limits
+  
+Messaging limits determine how many unique users your business can send messages to on a daily basis. This includes new conversations as well as existing conversations with users. The messaging limit does NOT limit the number of messages your business can send, just the number of users you are trying to message. It also does NOT apply to messages sent in response to a user-initiated message within a 24-hour period.
+
+* Tier 1: Allows your business to send messages to 1K unique customers in a rolling 24-hour period.
+* Tier 2: Allows your business to send messages to 10K unique customers in a rolling 24-hour period.
+* Tier 3: Allows your business to send messages to 100K unique customers in a rolling 24-hour period.
+* Tier 4: Allows your business to send messages to unlimited unique customers in a rolling 24-hour period.
+
+```
+A business starts in Tier 1 when it registers its phone number.
+```
+## Moving Tiers
+You are automatically upgraded to a higher tier based on the volume and quality of the messages you send. Conversely, you can be downgraded if more of your messages are reported or blocked by users.
+
+### Upgrades
+A business’s phone number is upgraded to the next tier if:
+
+    * Its quality rating is not low, and
+    * The cumulative amount of users it sends notifications to adds up to twice its current messaging limit within a 7-day period.
+ 
+Once the business reaches this threshold, it is moved to the next tier. The minimum amount of time that this upgrade can occur is after 48 hours, when the business is sending messages up to their current limit every day.
+
+### Flagged Status
+
+If a business has a Flagged status, it cannot upgrade tiers. After a business is Flagged, it must return to the Connected status and then restart the process to upgrade to the next tier.
+
+If your business has a "Flagged" status and the quality rating doesn't improve, you will be placed in a lower messaging limit tier. See more information about the "Flagged"
+
+### Examples
+
+See the charts below for examples of how a business might move to the next tier:
+
+**Example 1:** A business is upgraded from Tier 1 to Tier 2 when it messages a total of 2,000 users within a 7-day period.
+
+![image](https://user-images.githubusercontent.com/96904835/148518557-54a71a25-f2a6-4427-8fd9-2bcf082cc0e3.png)
+
+**Example 2:** The chart explains the concept of messaging limit in a rolling 24-hour window.
+
+![image](https://user-images.githubusercontent.com/96904835/148518744-2de972ad-c032-4fec-893c-779f9b31f497.png)
+
+### Before Deploying a New Number
+
+Messaging limits determine how many unique users your business can send messages to, on a daily basis, and it takes at least 7 days for the new number to reach the last tier.
+
+You should always analyze phone number quality before sending notifications to twice the current tier reach, so you guarantee you can move to the next tier in a healthy way. This is an opportunity for business to test with a smaller database to see how customers see this new communication channel you are creating.
+
+![image](https://user-images.githubusercontent.com/96904835/148518946-84238f7c-5a4c-4ad8-8026-68d698c3ff3f.png)
 
