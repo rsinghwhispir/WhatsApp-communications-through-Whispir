@@ -245,5 +245,5 @@ Messaging limit increased from 1K to 10K in 4 days:
 
 * If the 500th conversation is initiated at 7pm (for example), the messaging limit is increased at 7pm the following day (i.e. 24 hours later).
 
-## Decreasing Your Limit
+### Decreasing Your Limit
 Each time you initiate a new conversation with a unique customer we will check your phone number quality rating. If the rating has been Low for the last 7 days, we will immediately decrease your messaging limit by one level.
