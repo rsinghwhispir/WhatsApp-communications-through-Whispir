@@ -166,50 +166,51 @@ The phone number status, quality rating, and messaging limits for your WhatsApp 
 
   ## Messaging Limits
   
-Messaging limits determine how many unique users your business can send messages to on a daily basis. This includes new conversations as well as existing conversations with users. The messaging limit does NOT limit the number of messages your business can send, just the number of users you are trying to message. It also does NOT apply to messages sent in response to a user-initiated message within a 24-hour period.
+Messaging limits determine the maximum number of business-initiated conversations you can initiate using each of your phone numbers in a rolling 24-hour period. A business-initiated conversation begins when the first template message is delivered to a customer and ends 24 hours later.
 
-* Tier 1: Allows your business to send messages to 1K unique customers in a rolling 24-hour period.
-* Tier 2: Allows your business to send messages to 10K unique customers in a rolling 24-hour period.
-* Tier 3: Allows your business to send messages to 100K unique customers in a rolling 24-hour period.
-* Tier 4: Allows your business to send messages to unlimited unique customers in a rolling 24-hour period.
+Business phone numbers without a connected status and an approved display name are limited to 250 business-initiated conversations in a rolling 24-hour period. This includes all business phone numbers of an unverified business, since these numbers cannot receive display name approval until the business is verified.
 
-```
-A business starts in Tier 1 when it registers its phone number.
-```
-## Moving Tiers
-You are automatically upgraded to a higher tier based on the volume and quality of the messages you send. Conversely, you can be downgraded if more of your messages are reported or blocked by users.
+Business phone numbers with a connected status and approved display name can initiate conversations with the following number of unique customers in a rolling 24-hour period:
 
-### Upgrades
-A business’s phone number is upgraded to the next tier if:
+* 1K unique customer
+* 10K unique customers
+* 100K unique customers
+* An unlimited number of unique customers
 
-    * Its quality rating is not low, and
-    * The cumulative amount of users it sends notifications to adds up to twice its current messaging limit within a 7-day period.
- 
-Once the business reaches this threshold, it is moved to the next tier. The minimum amount of time that this upgrade can occur is after 48 hours, when the business is sending messages up to their current limit every day.
+This amount starts at 1K unique customers and scales automatically based on phone number status, phone number quality rating, and how often the business initiates conversations with unique customers.
 
-### Flagged Status
+If you reach your messaging limit, you can initiate more conversations as soon as one or more active conversations end. For example:
 
-If a business has a Flagged status, it cannot upgrade tiers. After a business is Flagged, it must return to the Connected status and then restart the process to upgrade to the next tier.
+![image](https://user-images.githubusercontent.com/96904835/224228750-5d92b2db-9dd0-4f3a-a7bf-0d7a7520b8ed.png)
 
-If your business has a "Flagged" status and the quality rating doesn't improve, you will be placed in a lower messaging limit tier. See more information about the "Flagged"
+## Checking Your Limit
+You can check your current messaging limits in the WhatsApp Manager > Overview Dashboard > Insights tab:
+![image](https://user-images.githubusercontent.com/96904835/224228846-9420ee42-ffed-4dd8-8c7c-0097843159be.png)
 
-### Examples
+## Increasing Your Limit
 
-See the charts below for examples of how a business might move to the next tier:
+Each time you initiate a new conversation with a unique customer we will determine if your limit should be increased. This determination is based on the following criteria:
 
-**Example 1:** A business is upgraded from Tier 1 to Tier 2 when it messages a total of 2,000 users within a 7-day period.
+* your phone number status is Connected
+* your phone number quality rating is Medium or High 
+*in the last 7 days you have initiated X or more conversations with unique customers, where X is your current messaging limit divided by 2
 
-![image](https://user-images.githubusercontent.com/96904835/148518557-54a71a25-f2a6-4427-8fd9-2bcf082cc0e3.png)
 
-**Example 2:** The chart explains the concept of messaging limit in a rolling 24-hour window.
 
-![image](https://user-images.githubusercontent.com/96904835/148518744-2de972ad-c032-4fec-893c-779f9b31f497.png)
+If you meet all conditions, we will increase your messaging limit by one level in 24 hours.
 
-### Before Deploying a New Number
+Examples
+Messaging limit increased from 1K to 10K in 2 days:
 
-Messaging limits determine how many unique users your business can send messages to, on a daily basis, and it takes at least 7 days for the new number to reach the last tier.
 
-You should always analyze phone number quality before sending notifications to twice the current tier reach, so you guarantee you can move to the next tier in a healthy way. This is an opportunity for business to test with a smaller database to see how customers see this new communication channel you are creating.
+![image](https://user-images.githubusercontent.com/96904835/224229112-8deccfc3-cf3b-4aa6-96ca-340ad615111a.png)
 
-![image](https://user-images.githubusercontent.com/96904835/148518946-84238f7c-5a4c-4ad8-8026-68d698c3ff3f.png)
+* If the 500th conversation is initiated at 3pm (for example), the messaging limit is increased at 3pm the following day (i.e. 24 hours later).
 
+Messaging limit increased from 1K to 10K in 4 days:
+![image](https://user-images.githubusercontent.com/96904835/224229199-5e4c22b0-0b94-4c36-ba62-0b351b86a73b.png)
+
+* If the 500th conversation is initiated at 7pm (for example), the messaging limit is increased at 7pm the following day (i.e. 24 hours later).
+
+## Decreasing Your Limit
+Each time you initiate a new conversation with a unique customer we will check your phone number quality rating. If the rating has been Low for the last 7 days, we will immediately decrease your messaging limit by one level.
