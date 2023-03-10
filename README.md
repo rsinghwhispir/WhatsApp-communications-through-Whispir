@@ -112,29 +112,33 @@ Sample WhatsApp message below triggered from Whispir’s platform:
 
 # WhatsApp Business Policy
 
-The below sections on the Business policy of WhatsApp Business Solution (WhatsApp Business API).
+The below sections on "Opt-in" and "Acceptable Message Types" only apply to the WhatsApp Business Solution (WhatsApp Business API).
 
 ## Opt-in
-In order to initiate a WhatsApp message to a person, you must first receive opt-in permission confirming that they wish to receive future messages from you on WhatsApp. 
-The opt-in must
 
-(a) clearly state that the person is opting in to receive messages from you over WhatsApp and 
-
-(b) clearly state your business’ name.
-
-You are solely responsible for determining the method of opt-in, that you have obtained opt-in in a manner that complies with laws applicable to your communications, and that you have otherwise provided notices and obtained permissions that are required under applicable law.
+* In order to initiate a WhatsApp message to a person, you must first receive opt-in permission confirming that they wish to receive future messages from you on WhatsApp. The opt-in must (a) clearly state that the person is opting in to receive messages from you over WhatsApp and (b) clearly state your business’ name.
+* You are solely responsible for determining the method of opt-in, that you have obtained opt-in in a manner that complies with laws applicable to your communications, and that you have otherwise provided notices and obtained permissions that are required under applicable law.
+* To help ensure a strong user experience, review the Opt-in best practices suggested below.
 
 ## Acceptable Message Types
 
-* You may only initiate chats using an approved Message Template (as defined in our documentation), subject to applicable pricing. Any Message Template must comply with our terms and these policies, and only be used for its designated purpose. We have the right to review, approve and reject any Message Template at any time.
-* If a person initiates a chat with you, you may continue that conversation via WhatsApp for up to 24 hours after the last message sent to you by that person without charge ("24-hour Window"). Outside of the 24-hour Window, you may only send messages via approved Message Templates, for which we will charge the applicable rate.
-* You may use automation when responding during the 24-hour Window, but must also have available prompt, clear, and direct escalation paths to human agents. These escalation paths include:
+* You may only initiate conversations using an approved Message Template (as defined in our documentation). This is considered a business-initiated conversation,which is subject to applicable pricing. Any Message Template must comply with our terms and these policies, and only be used for its designated purpose. We have the right to review, approve and reject any Message Template at any time.
+* You may reply to a user message without use of a Message Template as long as it's within 24 hours of the last user message. Conversations initiated by users open once the first business reply message is delivered. Standard pricing applies for these user-initiated conversations. Outside the 24-hour customer service window, you may only send messages via approved Message Templates, for which we will charge the business-initiated conversation rate.
+* You may use automation when responding during the 24-hour window, but must also have available prompt, clear, and direct escalation paths. These escalation paths include:
    * In Chat Human Agent transfer
    * Phone number
    * Email
    * Web support (on the business website)
    * In-store visits (ex: visit retail store, bank branch)
    * Support form
+
+## Protect Data & Comply with Law
+
+* You are responsible for and must secure all necessary notices, permissions, and consents to collect, use, and share people's content and information, including maintaining a published privacy policy, and otherwise complying with applicable law.
+* Don't use any data obtained from us about a person you message within WhatsApp, other than the content of message threads, for any purpose other than as reasonably necessary to support messaging with that person.
+* Don't share or ask people to share full length individual payment card numbers, financial account numbers, personal ID card numbers, or other sensitive identifiers.
+* Don’t use WhatsApp for telemedicine or to send or request any health information, if applicable regulations prohibit distribution of such information to systems that do not meet heightened requirements to handle health information.
+* You may not forward or otherwise share information from a customer chat with any other customer.
 
 ## Opt-In Best Practices
 
