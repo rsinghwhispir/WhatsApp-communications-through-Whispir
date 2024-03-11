@@ -100,11 +100,11 @@ The below screenshot shows how the Customer can use an existing WhatsApp approve
 
 ![image](https://user-images.githubusercontent.com/96904835/148511905-b8ed8634-24ab-4e36-be13-edd4bcb0b29b.png)
 
-## Sending WhatsApp messages using Supplier’s REST APIs
+## Sending WhatsApp messages using Whispir’s REST APIs
 
 Whispir platform’s REST APIs supports sending WhatsApp messages using a WhatsApp approved template both in real-time and in bulk.
 More details on how to send WhatsApp messages using Whispir platform APIs can be found below:
-https://developers.whispir.com/docs/whatsapp-messages
+[https://developers.whispir.com/docs/whatsapp-messages](https://developers.whispir.com/7ajh2y2qhyjk8-whats-app)
 
 Sample WhatsApp message below triggered from Whispir’s platform:
 ![image](https://user-images.githubusercontent.com/96904835/148512071-ac2fad31-ac44-464d-a720-878ddd91be76.png)
